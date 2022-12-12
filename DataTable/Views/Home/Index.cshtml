@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/lib/datatables/css/dataTables.bootstrap4.css" />
+<div class="container">
+    <h1 class="">Customers</h1>
+<table id="customers" class="table table-bordered table-striped dt-responsive nowrap">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>DateOfBirth</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+</table>
+</div>
+
+@section scripts
+{
+    <script src="~/lib/datatables/js/jquery.dataTables.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.js"></script>
+    <script src="~/js/CustomersDataTable.js"></script>
+}
